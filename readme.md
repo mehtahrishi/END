@@ -154,3 +154,54 @@ Okay, here are the viva questions and answers, broken down by the 'a' and 'b' pa
     * **Answer:** To influence which ports forward traffic and optimize the network topology.
 * **Question:** What are some STP enhancements?
     * **Answer:** RSTP (Rapid Spanning Tree Protocol) and MSTP (Multiple Spanning Tree Protocol).
+
+**Practical 8: VLAN and Spanning Tree**
+
+**(a) Per-VLAN Spanning Tree Behavior**
+
+* **Question:** What is Per-VLAN Spanning Tree (PVST)?
+    * **Answer:** A Cisco proprietary version of STP that runs a separate instance of STP for each VLAN.
+* **Question:** What are the advantages of PVST?
+    * **Answer:** Increased flexibility and optimization, as each VLAN can have its own root bridge.
+* **Question:** How does PVST enhance STP?
+    * **Answer:** By allowing for load balancing across different VLANs.
+
+**(b) Multiple Spanning Tree**
+
+* **Question:** What is Multiple Spanning Tree Protocol (MSTP)?
+    * **Answer:** An IEEE standard (802.1s) that maps multiple VLANs into a smaller number of spanning-tree instances.
+* **Question:** What are MST instances?
+    * **Answer:** Logical groupings of VLANs that share the same spanning-tree parameters.
+* **Question:** What are the benefits of MSTP?
+    * **Answer:** It combines the benefits of PVST+ while reducing the number of STP instances, improving scalability.
+
+**Practical 9: Internal VLAN Routing**
+
+**(a) Inter-VLAN Routing with an External Router**
+
+* **Question:** What is inter-VLAN routing?
+    * **Answer:** The process of forwarding traffic between different VLANs.
+* **Question:** How can you perform inter-VLAN routing with an external router?
+    * **Answer:** By connecting a router to a switch and configuring subinterfaces on the router for each VLAN.
+* **Question:** What is a "router-on-a-stick"?
+    * **Answer:** A configuration where a router connects to a switch via a single trunk link and uses subinterfaces for inter-VLAN routing.
+
+**(b) Inter-VLAN Routing with an Internal Router Processor**
+
+* **Question:** What is a Layer 3 switch?
+    * **Answer:** A switch that has routing capabilities.
+* **Question:** How does a Layer 3 switch perform inter-VLAN routing?
+    * **Answer:** By using Switch Virtual Interfaces (SVIs).
+* **Question:** What is an SVI?
+    * **Answer:** A virtual interface associated with a VLAN that allows the switch to route traffic between VLANs.
+
+**Practical 10: Configure NAT Services**
+
+* **Question:** What is NAT?
+    * **Answer:** Network Address Translation, a process of modifying IP address information in IP packet headers while they are in transit across a traffic routing device.
+* **Question:** What are the benefits of NAT?
+    * **Answer:** Conserving public IP addresses, increasing security.
+* **Question:** What are the different types of NAT?
+    * **Answer:** Static NAT, Dynamic NAT, PAT (Port Address Translation).
+* **Question:** What is PAT?
+    * **Answer:** A type of NAT that uses port numbers to distinguish between different internal hosts using the same public IP address.
